@@ -24,7 +24,7 @@ public class UserController {
         );
     }
 
-    @GetMapping("/{userName]")
+    @GetMapping("/{userName}")
     public UserModel getUser(@PathVariable("userName") final String userName){
         return new UserModel(userName, 1000L);
     }
